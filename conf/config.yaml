@@ -1,0 +1,16 @@
+mongo:
+  uri: mongodb://localhost:27017
+  database: test
+  ping: true
+redis:
+  uri: redis://localhost:6379
+asynq:
+  scheduler:
+    zone: Asia/Shanghai
+logger:
+  level: INFO
+  output: FILE
+  path: ./logs
+  age: 5
+  backup: 3
+  size: 4096

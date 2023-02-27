@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package common.v1;
+
+option go_package = "chat/api/common/v1;common";
+
+message HelloWorldCommon {
+  string language = 1;
+}
