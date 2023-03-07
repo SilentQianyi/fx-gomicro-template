@@ -3,6 +3,7 @@ module chat
 go 1.20
 
 require (
+	github.com/go-micro/plugins/v4/broker/rabbitmq v1.2.1
 	github.com/go-micro/plugins/v4/client/grpc v1.2.0
 	github.com/go-micro/plugins/v4/config/encoder/yaml v1.2.0
 	github.com/go-micro/plugins/v4/server/grpc v1.2.0
@@ -61,6 +62,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
+	github.com/streadway/amqp v1.0.0 // indirect
 	github.com/stretchr/testify v1.8.1 // indirect
 	github.com/urfave/cli/v2 v2.17.1 // indirect
 	github.com/xanzy/ssh-agent v0.3.2 // indirect

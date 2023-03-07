@@ -3,8 +3,8 @@ package grpc
 import (
 	"chat/api/common/v1"
 	"chat/api/helloWorld/v1"
+	"chat/internal/biz"
 	"chat/internal/db"
-	"chat/internal/service/biz"
 	"context"
 	"go-micro.dev/v4/server"
 )

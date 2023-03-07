@@ -4,6 +4,16 @@ mongo:
   ping: true
 redis:
   uri: redis://localhost:6379
+rabbitmq:
+  uri: "amqp://admin:admin@localhost:5672"
+  prefetchCount: 15
+  queues:
+    message:
+      name: "im.message.send.queue"
+      type: quorum
+      durable: true
+      consumers: 5
+      ackOnSuccess: true
 asynq:
   scheduler:
     zone: Asia/Shanghai

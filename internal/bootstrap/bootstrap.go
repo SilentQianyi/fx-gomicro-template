@@ -1,6 +1,7 @@
 package bootstrap
 
 import (
+	"chat/internal/biz"
 	"chat/internal/bootstrap/asynq"
 	"chat/internal/bootstrap/logger"
 	"chat/internal/bootstrap/mongo"
@@ -33,10 +34,11 @@ func Run() {
 	var srv micro.Service
 	container := fx.New(
 		config.Module,
+		logger.Module,
 		db.Module,
+		biz.Module,
 		service.Module,
 		fx.Options(
-			logger.Module,
 			asynq.Module,
 			mongo.Module,
 			server.Module,
